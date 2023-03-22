@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link rel="icon" href="images/favicon (2).ico" type="image/x-icon">
+    <title> HTML ile İlgili Kurslar</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kendimi-Tanıtıyorum</title>
+    <meta name="description" content="Önemli bir konu olan HTML ile ilgili kurslar yardımıyla bilgilerinizi arttırın.">
+    <meta name="keywords" content="HTML, kurs, ilgili, bilgi,frontend">
 </head>
 <body>
     <h1>Zeynep Duran</h1>
@@ -76,6 +77,13 @@
          em: italik yazı
          strong: kalın yazı -->
     <p>Lorem <strong>ipsum</strong> dolor sit <em>amet</em> consectetur, <span style="color:blueviolet">adipisicing</span> elit. Enim, cupiditate.</p>
+    <p> buraya <u>önemli</u> bir <mark>bilgi</mark> yazıyorum.</p>
+    <p> matematikte 2 <sup>2</sup>=4</p>
+    <p> dizilerde a'nın 3. elemanı=a <sub>3</sub></p>
+    <p> <pre>       abc 
+              def       ghj  
+                                    klm
+    </pre></p>
     <hr>
     <p>Lorem ipsum dolor sit amet.</p> 
     <figure>
@@ -88,7 +96,27 @@
                articles -->
     <!-- footer -->
 
+<h2>Tablo Oluşturma</h2>
+<table border="5">
+    <tr><td>AD:</td><td>Zeynep</td></tr>
+    <tr><td>SOYAD:</td><td>Duran</td></tr>
 
-
+</table>
+<br>
+<table border="2">
+    <caption>11-D Sınıfı Bilgileri</caption>
+    <thead>
+        <tr><th>İsim</th><th>Numara</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Zeynep Duran</td><td>769</td></tr>
+        <tr><td>Mehmet Yılmaz</td><td>802</td></tr>
+    </tbody>
+    <tfoot>
+        <tr><td>Öğrenci sayısı:</td><td>2</td></tr>
+        <tr><td colspan="2">Öğretmen: Emre Bulut</td></tr> 
+        <!-- colspan:satır hücrelerini birleştirir. rowspan:sütun hücrelerini birleştirir. -->
+    </tfoot>
+</table>
 </body>
 </html>
