@@ -25,7 +25,7 @@
     <img src="https://picsum.photos/seed/picsum/536/354"  border="6"  alt="" >
     
     <!-- başka bir websitesine git -->
-    <!-- target yeni sekmede açmayı sağlar -->
+    <!-- _blank yeni sekmede açmayı sağlar -->
     <br>
     <a href="https://kodluyoruz.org" target="_blank"> 
         kodluyoruz sayfasına gidilecek
@@ -80,12 +80,14 @@
     <p> buraya <u>önemli</u> bir <mark>bilgi</mark> yazıyorum.</p>
     <p> matematikte 2 <sup>2</sup>=4</p>
     <p> dizilerde a'nın 3. elemanı=a <sub>3</sub></p>
+    <!-- pre: burada olduğu gibi boşluklu yazılmasını sağlar. -->
     <p> <pre>       abc 
               def       ghj  
                                     klm
     </pre></p>
     <hr>
     <p>Lorem ipsum dolor sit amet.</p> 
+    <!-- RESMİN ALTINA YAZI YAZMA -->
     <figure>
         <img src="images/1071-536x354.jpg" alt="">
         <figcaption><small>1970lerden kalma bir araba</small></figcaption>
@@ -96,6 +98,7 @@
                articles -->
     <!-- footer -->
 
+<!-- TABLO -->
 <h2>Tablo Oluşturma</h2>
 <table border="5">
     <tr><td>AD:</td><td>Zeynep</td></tr>
@@ -118,5 +121,98 @@
         <!-- colspan:satır hücrelerini birleştirir. rowspan:sütun hücrelerini birleştirir. -->
     </tfoot>
 </table>
+<!-- FORM OLUŞTURMA -->
+<h2>Üye Kayıt Formu:</h2>
+<form name="kayit" action="kayit.php" method="get">
+    Ad Soyad: <input type="text" name="adsoyad" id="idadsoyad" size="20" maxlength="25" required>
+    <br>
+    E-mail:
+    <input type="email" name="email" id="email" required>
+    <br>
+    Web Sitesi:
+    <input type="url" name="web" id="web">
+    <br>
+    Yaş:
+    <input type="number" name="yas" id="yas" required>
+    <br>
+    <br>
+    <input type="submit" value="Tamam">
+    <input type="reset" value="Temizle">
+</form>     
+<!-- TABLO YARDIMIYLA FORM OLUŞTURMA -->
+<h2>Tablo Şeklinde Üye Kayıt Formu</h2>
+<form name="kayit" action="kayit.aspx" method="get">
+    <table>
+        <tr><td>Ad Soyad:</td><td><input type="text" name="adsoyad" required></td></tr>
+        <tr><td>E-mail:</td><td><input type="email" name="email" required></td></tr>
+        <tr><td></td><td><input type="submit" value="Tamam"> <input type="reset" value="Sil"></td></tr>
+    </table>
+</form>  
+<br>
+<br>  
+<!-- FORM ÖZELLİKLERİ -->
+<!-- autocomplete:otomatik doldurma, autofocus:fare imleci form elemanı üzerinde yanıp söner, disabled:form elemanını pasif yapar -->
+<form autocomplete="on">
+    Ad Soyad: <input type="text" name="adsoyad" id="adsoyad" size="16" maxlength="30" required autofocus placeholder="adınızı girin">
+</form>
+<br>
+<br>
+<!-- FORMDA METİN ALANI -->
+<!-- rows:satır sayısı, cols:genişlik -->
+<form autocomplete="on">
+    Ad Soyad: <input type="text">
+    <br>
+    Yaş: <input type="number">
+    <br>
+    İlgi Alanları: <textarea name="ilgi" id="ilgi" cols="30" rows="7"></textarea>
+</form>
+<br>
+<br>
+<!-- FORMDA ONAY KUTUSU -->
+<h2>Onay Kutusu</h2>
+<form autocomplete="on">
+    <input type="checkbox" name="bulten"> Bültene abone ol.
+    <br> 
+    <input type="checkbox" name="medeni"> Evliyim.
+    <br><br>
+    <input type="submit" value="Gönder">
+</form>
+<br>
+<!-- FORMDA SEÇENEK KUTUSU -->
+<h2>Seçenek Kutusu</h2>
+<h4>Sevdiğiniz çiçek türünü seçiniz:</h4>
+<form autocomplete="on">
+    <input type="radio" name="cicek" value="gul"> Gül 
+    <input type="radio" name="cicek" value="papatya" checked> Papatya 
+    <input type="radio" name="cicek" value="lale"> Lale
+    <br> <br>
+    <input type="submit">
+</form>
+<!-- FORMDA SEÇENEK LİSTESİ -->
+<h2>Seçenek Listesi</h2>
+<form>
+    Ülke seçiniz:
+    <select name="ulke" id="ulke">
+        <option> Almanya</option>
+        <option> Belçika</option>
+        <option> Çin</option>
+        <option> Danimarka</option>
+        <option selected> Türkiye</option>
+        <option> Yunanistan</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Gönder">
+    <input type="reset" value="İptal">
+</form>
+<!-- FORMDA RESİMLİ ONAY -->
+<h2>Resimli Onay Formu</h2>
+<form action="onay.php">
+    Kullanıcı adı: <input type="text" name="kullanici">
+    <br>
+    Parola: <input type="password" name="sifre">
+    <br>
+    <input type="image" src="images/submit2.png" width="70">
+    <input type="image" src="images/reset3.png" width="70">
+</form>
 </body>
 </html>
