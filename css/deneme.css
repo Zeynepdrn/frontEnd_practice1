@@ -1,0 +1,36 @@
+/* açıklama satırı*/
+body {
+    background-color: khaki;
+    font-family: 'Delicious Handrawn', cursive;
+}
+h1 {
+    color:blue;
+    font-size:60px
+}
+h3 {
+    color:rgb(174, 142, 165);
+    font-size:40px;
+    text-transform: uppercase;
+}
+p {
+    color:cornflowerblue;
+    font-size: 20px;
+}
+/* class -> . 
+   id -> #  */
+
+.text-red {
+    color:red;
+}
+
+.fs-14 {
+    font-size:14px;
+}
+
+.fs-30 {
+    font-size:30px;
+}
+
+#article {
+    color:rgb(47, 128, 131);
+}
