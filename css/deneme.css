@@ -1,6 +1,6 @@
 /* açıklama satırı*/
 body {
-    background-color: khaki;
+    background-color: rgb(231, 226, 182);
     font-family: 'Delicious Handrawn', cursive;
 }
 h1 {
@@ -33,4 +33,16 @@ p {
 
 #article {
     color:rgb(47, 128, 131);
+}
+
+li:nth-child(odd) {
+    color:blue
+}
+
+li:nth-child(even) {
+    color:yellow
+}
+
+a.test:hover {
+    color:pink
 }
